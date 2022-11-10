@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container button{
+    border: 0;
+    padding: 10px 24px;
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+    border-radius: 6px;
+    background: #7440ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.toast-box{
+    display: flex;
+    position: absolute;
+    width: 420px;
+    background: #fff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 4px 2px rgb(227, 222, 222);
+    gap: 20px;
+    align-items: center;
+    border-left: 4px solid #7440ff;
+    visibility: hidden;
+
+    /**** alignment **/
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.toast-box.active{
+    visibility: visible;
+}
+.toast-box .toast-box-icon{
+    background: #7440ff;
+    padding: 5px 8px;
+    border-radius: 100%;
+}
+
+.toast-box .toast-box-icon .bx{
+    font-size: 32px;
+    color: #fff;
+}
+
+.toast-box .toast-box-text{
+    position: relative;
+    text-align: left;
+}
+
+.toast-box-text .toast-heading{
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.toast-box-text .toast-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #3d3d3d;
+}
+
+.toast-box .toast-close{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    padding: 4px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
